@@ -1,0 +1,48 @@
+{% extends "myweb.html" %}
+
+{% block nav %}
+<a class="flex-sm-fill text-sm-center nav-link " href="/">Home</a>
+           <a class="flex-sm-fill text-sm-center nav-link " href="/about">About</a>
+           <a class="flex-sm-fill text-sm-center nav-link active " href="/contact">Contact</a>
+           <a class="flex-sm-fill text-sm-center nav-link  "   href="/projects" >Projects</a>
+{% endblock %}
+
+{% block main %}
+ <!-- Main Content -->
+  <div class="container" style="padding:40px" >
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <H4 >If you want to contact me or have any career suggestions, Feel free to fill out the form provided below.</H4>
+
+        <form name="sentMessage" action="/contact" method="post" id="contactForm" >
+
+          <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="uname" placeholder="Enter username">
+          </div>
+
+          <div class="form-group">
+               <label for="Email">Email address</label>
+               <input type="email" class="form-control" id="Email" name="gmail" aria-describedby="emailHelp" placeholder="Enter email">
+               <small id="emailhelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea rows="5" class="form-control" id="message" name="mes" required data-validation-required-message="Please enter a message." ></textarea>
+            </div>
+
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+{% endblock %}

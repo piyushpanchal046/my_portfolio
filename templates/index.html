@@ -1,0 +1,61 @@
+{% extends "myweb.html" %}
+
+{% block nav %}
+<a class="flex-sm-fill text-sm-center nav-link active " href="/">Home</a>
+           <a class="flex-sm-fill text-sm-center nav-link  " href="/about">About</a>
+           <a class="flex-sm-fill text-sm-center nav-link " href="/contact">Contact</a>
+           <a class="flex-sm-fill text-sm-center nav-link "   href="/projects" >Projects</a>
+
+{% endblock %}
+
+{% block main %}
+
+
+<div class="container">
+
+
+
+<div style="padding:40px" class="  text-warning" >
+    <h1 class="text-warning" ><span id="greetings" ></span></h1>
+    <script>
+          var type1 = new Typed(' #greetings', {
+           strings: [' {{name["home"]["greet"]["g1"]}} ', '{{name["home"]["greet"]["g2"]}} ',"{{name["home"]["greet"]["g3"]}} ",],
+           typeSpeed: 50,
+           backSpeed:50,
+           loop: true
+          });
+       </script>
+
+
+    <h1 class="text-light" > My Name Is <span class="text-info">PIYUSH PANCHAL, </span> </h1>
+    <h1 class="text-success" > I Am A
+
+ <!-- animated texts -->
+  <span id="element" class="text-success" ></span>
+       <script>
+          var type = new Typed('#element', {
+           strings: ['{{name["home"]["iam"]["i1"]}} ', ' {{name["home"]["iam"]["i2"]}} '," {{name["home"]["iam"]["i3"]}} ",],
+           typeSpeed: 50,
+           backSpeed:50,
+           loop: true
+          });
+       </script>
+
+    </h1>
+  </div>
+
+<div class=" py-4 py-md-5 mt-5 ">
+
+           <p style="text-align: center;  font-size: 35px;">{{name["home"]["ph"]["h1 "]}} </p>
+       <p style="text-align: center;  font-size: 35px;">
+           Please check out my website.
+
+   For more details about me, please check out the "About" section of my website.
+   </p>
+</div>
+</div>
+
+
+
+
+{% endblock %}

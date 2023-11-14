@@ -1,0 +1,34 @@
+{
+  "url": {
+           "twitter": "https://twitter.com/PiyushPanchal46",
+           "facebook": "https://www.facebook.com/profile.php?id=100076505829213",
+           "linkedin": "https://www.linkedin.com/in/piyush-panchal-b3435a289",
+           "youtube": "https://www.youtube.com/@piyushpanchal046",
+           "mail": "myemail",
+           "pass": "mypassword",
+           "database": "mysql://root:@localhost/mysite"
+
+        },
+  "home":{
+            "greet": {
+                   "g1": "Namaste",
+                   "g2": "Hi",
+                   "g3": "Hola"
+                   },
+            "iam": {
+                 "i1": "Passionate Programmer",
+                 "i2": "Tech lover",
+                 "i3": "Eternal Learner"
+                  },
+            "ph": {
+                  "h1": " Welcome to my page",
+                   "h2": " Please check out my website. For more details about me, please check out the About section of my website."
+                  }
+            },
+  "project": {
+              "p1": " This is my first project developed using Flask.",
+              "p2": " Todo website create account and use it now",
+              "p3": " More projects coming soon."
+  }
+
+}

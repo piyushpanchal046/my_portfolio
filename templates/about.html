@@ -1,0 +1,26 @@
+{% extends "myweb.html" %}
+
+{% block nav %}
+<a class="flex-sm-fill text-sm-center nav-link " href="/">Home</a>
+           <a class="flex-sm-fill text-sm-center nav-link active " href="/about">About</a>
+           <a class="flex-sm-fill text-sm-center nav-link " href="/contact">Contact</a>
+           <a class="flex-sm-fill text-sm-center nav-link "   href="/projects" >Projects</a>
+{% endblock %}
+
+{% block main %}
+<div class=" container " style="padding:40px"  >
+    <!-- 1st  -->
+      <div class="section-title">
+          <h2>About</h2>  <!-- <h5> ===  <p style="font-size: 20px"> --->
+          <p style="font-size: 20px"> Hello, I'm <b>Piyush Panchal</b>, and I'm 21 years old. I'm currently pursuing a <b>B.Tech</b> in <b> Civil Engineering </b> at<b> J.C. Bose University of Science and Technology,
+              YMCA Faridabad</b>. With a deep passion for technology, I began my journey in Computer Science by learning programming languages. I started with the <b>C language</b> and After some time, my interest
+              began to grow in websites and web development, which led me to explore the<b> basics of Python</b>. This foundation helped me to better understand the concept of <b>Flask</b>.
+              <br> Currently, the website you are surfing was developed by me, using  <b>Flask </b> as the backend framework and <b> Bootstrap </b> as the frontend framework. </p>
+      </div>
+
+    <h6 style="text-align: end;"> <i> Last update today </i>  </h6>
+
+</div>
+
+
+{% endblock %}
