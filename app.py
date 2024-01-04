@@ -82,5 +82,5 @@ def projects():
     return render_template("projects.html", name=name,bgimage=bg,logo=logo,project1=project1,project2=project2,project3=project3)
 
 
-if __name__ == "__main__":
-    app.run()
+#if __name__ == "__main__":
+#    app.run()
